@@ -8,15 +8,35 @@ import com.zebrunner.carina.api.http.HttpMethodType;
 import com.zebrunner.carina.api.http.HttpResponseStatusType;
 import com.zebrunner.carina.utils.config.Configuration;
 
-@Endpoint(url = "${base_url}/books", methodType = HttpMethodType.GET)
-@ResponseTemplatePath(path = "api/books/_get/rs.json")
+@Endpoint(url = "${base_url}/", methodType = HttpMethodType.GET)
+@ResponseTemplatePath(path = "api/user/_get/rs.json")
 @SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
-public class GetBooksMethod extends AbstractApiMethodV2 {
-
-	public GetBooksMethod() {
-		replaceUrlPlaceholder("base_url", Configuration.getRequired("books_api_url"));
+public class getRandomUserMethod extends AbstractApiMethodV2{
+	public getRandomUserMethod() {
+		replaceUrlPlaceholder("base_url", Configuration.getRequired("randomuser_api_url"));
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

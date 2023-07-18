@@ -12,8 +12,8 @@ import com.zebrunner.carina.utils.config.Configuration;
 @Endpoint(url = "${base_url}/currency/india", methodType = HttpMethodType.GET)
 @ResponseTemplatePath(path = "api/currency/_get/rs.json")
 @SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
-public class GetCurrencyMethod extends AbstractApiMethodV2 {
-	public GetCurrencyMethod() {
+public class getCurrencyMethod extends AbstractApiMethodV2 {
+	public getCurrencyMethod() {
 		replaceUrlPlaceholder("base_url", Configuration.getRequired("currency_api_url"));
 	}
 }

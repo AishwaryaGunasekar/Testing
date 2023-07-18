@@ -8,13 +8,22 @@ import com.zebrunner.carina.api.http.HttpMethodType;
 import com.zebrunner.carina.api.http.HttpResponseStatusType;
 import com.zebrunner.carina.utils.config.Configuration;
 
-@Endpoint(url = "${base_url}/capital/delhi", methodType = HttpMethodType.GET)
-@ResponseTemplatePath(path = "api/capital/_get/rs.json")
+@Endpoint(url = "${base_url}/exchange?from=SGD&to=MYR&q=1.0", methodType = HttpMethodType.GET)
+@ResponseTemplatePath(path = "api/exchange/_get/rs.json")
 @SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
-public class GetCapitalCityMethod extends AbstractApiMethodV2 {
-	public GetCapitalCityMethod() {
-
-		replaceUrlPlaceholder("base_url", Configuration.getRequired("currency_api_url"));
+public class getCurrencyConverterMethod extends AbstractApiMethodV2{
+	public getCurrencyConverterMethod() {
+		replaceUrlPlaceholder("base_url", Configuration.getRequired("currencyexchange_api_url"));
 	}
-
 }
+
+
+
+
+
+
+
+
+
+
+
