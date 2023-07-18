@@ -1,0 +1,439 @@
+[
+    {
+        "name": {
+            "common": "Bhutan",
+            "official": "Kingdom of Bhutan",
+            "nativeName": {
+                "dzo": {
+                    "official": "འབྲུག་རྒྱལ་ཁབ་",
+                    "common": "འབྲུག་ཡུལ་"
+                }
+            }
+        },
+        "tld": [
+            ".bt"
+        ],
+        "cca2": "BT",
+        "ccn3": "064",
+        "cca3": "BTN",
+        "cioc": "BHU",
+        "independent": true,
+        "status": "officially-assigned",
+        "unMember": true,
+        "currencies": {
+            "BTN": {
+                "name": "Bhutanese ngultrum",
+                "symbol": "Nu."
+            },
+            "INR": {
+                "name": "Indian rupee",
+                "symbol": "₹"
+            }
+        },
+        "idd": {
+            "root": "+9",
+            "suffixes": [
+                "75"
+            ]
+        },
+        "capital": [
+            "Thimphu"
+        ],
+        "altSpellings": [
+            "BT",
+            "Kingdom of Bhutan"
+        ],
+        "region": "Asia",
+        "subregion": "Southern Asia",
+        "languages": {
+            "dzo": "Dzongkha"
+        },
+        "translations": {
+            "ara": {
+                "official": "مملكة بوتان",
+                "common": "بوتان"
+            },
+            "bre": {
+                "official": "Rouantelezh Bhoutan",
+                "common": "Bhoutan"
+            },
+            "ces": {
+                "official": "Bhútánské království",
+                "common": "Bhútán"
+            },
+            "cym": {
+                "official": "Teyrnas Bhwtan",
+                "common": "Bhwtan"
+            },
+            "deu": {
+                "official": "Königreich Bhutan",
+                "common": "Bhutan"
+            },
+            "est": {
+                "official": "Bhutani Kuningriik",
+                "common": "Bhutan"
+            },
+            "fin": {
+                "official": "Bhutanin kuningaskunta",
+                "common": "Bhutan"
+            },
+            "fra": {
+                "official": "Royaume du Bhoutan",
+                "common": "Bhoutan"
+            },
+            "hrv": {
+                "official": "Kraljevina Butan",
+                "common": "Butan"
+            },
+            "hun": {
+                "official": "Bhutáni Királyság",
+                "common": "Bhután"
+            },
+            "ita": {
+                "official": "Regno del Bhutan",
+                "common": "Bhutan"
+            },
+            "jpn": {
+                "official": "ブータン王国",
+                "common": "ブータン"
+            },
+            "kor": {
+                "official": "부탄 왕국",
+                "common": "부탄"
+            },
+            "nld": {
+                "official": "Koninkrijk Bhutan",
+                "common": "Bhutan"
+            },
+            "per": {
+                "official": "پادشاهی بوتان",
+                "common": "بوتان"
+            },
+            "pol": {
+                "official": "Bhutan",
+                "common": "Bhutan"
+            },
+            "por": {
+                "official": "Reino do Butão",
+                "common": "Butão"
+            },
+            "rus": {
+                "official": "Королевство Бутан",
+                "common": "Бутан"
+            },
+            "slk": {
+                "official": "Bhutánske krâľovstvo",
+                "common": "Bhután"
+            },
+            "spa": {
+                "official": "Reino de Bután",
+                "common": "Bután"
+            },
+            "srp": {
+                "official": "Краљевина Бутан",
+                "common": "Бутан"
+            },
+            "swe": {
+                "official": "Konungariket Bhutan",
+                "common": "Bhutan"
+            },
+            "tur": {
+                "official": "Butan Krallığı",
+                "common": "Butan"
+            },
+            "urd": {
+                "official": "سلطنت بھوٹان",
+                "common": "بھوٹان"
+            },
+            "zho": {
+                "official": "不丹王国",
+                "common": "不丹"
+            }
+        },
+        "latlng": [
+            27.5,
+            90.5
+        ],
+        "landlocked": true,
+        "borders": [
+            "CHN",
+            "IND"
+        ],
+        "area": 38394.0,
+        "demonyms": {
+            "eng": {
+                "f": "Bhutanese",
+                "m": "Bhutanese"
+            },
+            "fra": {
+                "f": "Bhoutanaise",
+                "m": "Bhoutanais"
+            }
+        },
+        "flag": "🇧🇹",
+        "maps": {
+            "googleMaps": "https://goo.gl/maps/VEfXXBftTFLUpNgp8",
+            "openStreetMaps": "https://www.openstreetmap.org/relation/184629"
+        },
+        "population": 771612,
+        "gini": {
+            "2017": 37.4
+        },
+        "fifa": "BHU",
+        "car": {
+            "signs": [
+                "BHT"
+            ],
+            "side": "left"
+        },
+        "timezones": [
+            "UTC+06:00"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "flags": {
+            "png": "https://flagcdn.com/w320/bt.png",
+            "svg": "https://flagcdn.com/bt.svg",
+            "alt": "The flag of Bhutan is divided diagonally, from the lower hoist-side corner to the upper fly-side corner, into an upper yellow and a lower orange triangle. A fly-side facing white dragon holding four jewels in its claws is situated along the boundary of the two triangles."
+        },
+        "coatOfArms": {
+            "png": "https://mainfacts.com/media/images/coats_of_arms/bt.png",
+            "svg": "https://mainfacts.com/media/images/coats_of_arms/bt.svg"
+        },
+        "startOfWeek": "monday",
+        "capitalInfo": {
+            "latlng": [
+                27.47,
+                89.63
+            ]
+        }
+    },
+    {
+        "name": {
+            "common": "India",
+            "official": "Republic of India",
+            "nativeName": {
+                "eng": {
+                    "official": "Republic of India",
+                    "common": "India"
+                },
+                "hin": {
+                    "official": "भारत गणराज्य",
+                    "common": "भारत"
+                },
+                "tam": {
+                    "official": "இந்தியக் குடியரசு",
+                    "common": "இந்தியா"
+                }
+            }
+        },
+        "tld": [
+            ".in"
+        ],
+        "cca2": "IN",
+        "ccn3": "356",
+        "cca3": "IND",
+        "cioc": "IND",
+        "independent": true,
+        "status": "officially-assigned",
+        "unMember": true,
+        "currencies": {
+            "INR": {
+                "name": "Indian rupee",
+                "symbol": "₹"
+            }
+        },
+        "idd": {
+            "root": "+9",
+            "suffixes": [
+                "1"
+            ]
+        },
+        "capital": [
+            "New Delhi"
+        ],
+        "altSpellings": [
+            "IN",
+            "Bhārat",
+            "Republic of India",
+            "Bharat Ganrajya",
+            "இந்தியா"
+        ],
+        "region": "Asia",
+        "subregion": "Southern Asia",
+        "languages": {
+            "eng": "English",
+            "hin": "Hindi",
+            "tam": "Tamil"
+        },
+        "translations": {
+            "ara": {
+                "official": "جمهورية الهند",
+                "common": "الهند"
+            },
+            "bre": {
+                "official": "Republik India",
+                "common": "India"
+            },
+            "ces": {
+                "official": "Indická republika",
+                "common": "Indie"
+            },
+            "cym": {
+                "official": "Republic of India",
+                "common": "India"
+            },
+            "deu": {
+                "official": "Republik Indien",
+                "common": "Indien"
+            },
+            "est": {
+                "official": "India Vabariik",
+                "common": "India"
+            },
+            "fin": {
+                "official": "Intian tasavalta",
+                "common": "Intia"
+            },
+            "fra": {
+                "official": "République de l'Inde",
+                "common": "Inde"
+            },
+            "hrv": {
+                "official": "Republika Indija",
+                "common": "Indija"
+            },
+            "hun": {
+                "official": "Indiai Köztársaság",
+                "common": "India"
+            },
+            "ita": {
+                "official": "Repubblica dell'India",
+                "common": "India"
+            },
+            "jpn": {
+                "official": "インド共和国",
+                "common": "インド"
+            },
+            "kor": {
+                "official": "인도 공화국",
+                "common": "인도"
+            },
+            "nld": {
+                "official": "Republiek India",
+                "common": "India"
+            },
+            "per": {
+                "official": "جمهوری هندوستان",
+                "common": "هند"
+            },
+            "pol": {
+                "official": "Republika Indii",
+                "common": "Indie"
+            },
+            "por": {
+                "official": "República da Índia",
+                "common": "Índia"
+            },
+            "rus": {
+                "official": "Республика Индия",
+                "common": "Индия"
+            },
+            "slk": {
+                "official": "Indická republika",
+                "common": "India"
+            },
+            "spa": {
+                "official": "República de la India",
+                "common": "India"
+            },
+            "srp": {
+                "official": "Република Индија",
+                "common": "Индија"
+            },
+            "swe": {
+                "official": "Republiken Indien",
+                "common": "Indien"
+            },
+            "tur": {
+                "official": "Hindistan Cumhuriyeti",
+                "common": "Hindistan"
+            },
+            "urd": {
+                "official": "جمہوریہ بھارت",
+                "common": "بھارت"
+            },
+            "zho": {
+                "official": "印度共和国",
+                "common": "印度"
+            }
+        },
+        "latlng": [
+            20.0,
+            77.0
+        ],
+        "landlocked": false,
+        "borders": [
+            "BGD",
+            "BTN",
+            "MMR",
+            "CHN",
+            "NPL",
+            "PAK"
+        ],
+        "area": 3287590.0,
+        "demonyms": {
+            "eng": {
+                "f": "Indian",
+                "m": "Indian"
+            },
+            "fra": {
+                "f": "Indienne",
+                "m": "Indien"
+            }
+        },
+        "flag": "🇮🇳",
+        "maps": {
+            "googleMaps": "https://goo.gl/maps/WSk3fLwG4vtPQetp7",
+            "openStreetMaps": "https://www.openstreetmap.org/relation/304716"
+        },
+        "population": 1380004385,
+        "gini": {
+            "2011": 35.7
+        },
+        "fifa": "IND",
+        "car": {
+            "signs": [
+                "IND"
+            ],
+            "side": "left"
+        },
+        "timezones": [
+            "UTC+05:30"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "flags": {
+            "png": "https://flagcdn.com/w320/in.png",
+            "svg": "https://flagcdn.com/in.svg",
+            "alt": "The flag of India is composed of three equal horizontal bands of saffron, white and green. A navy blue wheel with twenty-four spokes — the Ashoka Chakra — is centered in the white band."
+        },
+        "coatOfArms": {
+            "png": "https://mainfacts.com/media/images/coats_of_arms/in.png",
+            "svg": "https://mainfacts.com/media/images/coats_of_arms/in.svg"
+        },
+        "startOfWeek": "monday",
+        "capitalInfo": {
+            "latlng": [
+                28.6,
+                77.2
+            ]
+        },
+        "postalCode": {
+            "format": "######",
+            "regex": "^(\\d{6})$"
+        }
+    }
+]

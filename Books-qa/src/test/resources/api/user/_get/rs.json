@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Stanislav",
+                "last": "Zec"
+            },
+            "location": {
+                "street": {
+                    "number": 9702,
+                    "name": "Moštanička"
+                },
+                "city": "Brus",
+                "state": "Nišava",
+                "country": "Serbia",
+                "postcode": 41900,
+                "coordinates": {
+                    "latitude": "62.1000",
+                    "longitude": "-30.7025"
+                },
+                "timezone": {
+                    "offset": "+4:00",
+                    "description": "Abu Dhabi, Muscat, Baku, Tbilisi"
+                }
+            },
+            "email": "stanislav.zec@example.com",
+            "login": {
+                "uuid": "cf9f9255-4a28-433b-902b-3fa69e1e75cf",
+                "username": "blackpeacock318",
+                "password": "2020",
+                "salt": "rOjHnmRK",
+                "md5": "eaa749f377b4420031287d070db96488",
+                "sha1": "3d1e1cd4ea7df384ff455be61226d4a1ba4392b4",
+                "sha256": "eff736c2eb93b74fa04266fb34a80e5cb2b06cf407b822e5129187934279730b"
+            },
+            "dob": {
+                "date": "1999-02-27T11:04:27.970Z",
+                "age": 24
+            },
+            "registered": {
+                "date": "2015-08-01T00:25:03.807Z",
+                "age": 7
+            },
+            "phone": "029-1943-797",
+            "cell": "065-0709-567",
+            "id": {
+                "name": "SID",
+                "value": "426967920"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/39.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/39.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/39.jpg"
+            },
+            "nat": "RS"
+        }
+    ],
+    "info": {
+        "seed": "a2ab722e9ffe5464",
+        "results": 1,
+        "page": 1,
+        "version": "1.4"
+    }
+}

@@ -1,0 +1,567 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome5",
+    "definitions": {
+        "Welcome5": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "total_results": {
+                    "type": "integer"
+                },
+                "total_pages": {
+                    "type": "integer"
+                },
+                "results": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Result"
+                    }
+                }
+            },
+            "required": [
+                "results",
+                "total_pages",
+                "total_results"
+            ],
+            "title": "Welcome5"
+        },
+        "Result": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "work_id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "title_search": {
+                    "type": "string"
+                },
+                "canonical_published_work_id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "summary": {
+                    "type": "null"
+                },
+                "min_age": {
+                    "type": "integer"
+                },
+                "max_age": {
+                    "type": "integer"
+                },
+                "series_name": {
+                    "$ref": "#/definitions/SeriesName"
+                },
+                "copyright": {
+                    "type": "integer"
+                },
+                "page_count": {
+                    "type": "integer"
+                },
+                "language": {
+                    "$ref": "#/definitions/Language"
+                },
+                "published_works": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/PublishedWork"
+                    }
+                },
+                "measurements": {
+                    "$ref": "#/definitions/Measurements"
+                },
+                "foundational_reading": {
+                    "$ref": "#/definitions/FoundationalReading"
+                },
+                "authors": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Author"
+                    }
+                },
+                "author_first_names": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/AuthorFirstName"
+                    }
+                },
+                "author_last_names": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/AuthorLastName"
+                    }
+                },
+                "canonical_isbn": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "author_first_names",
+                "author_last_names",
+                "authors",
+                "canonical_isbn",
+                "canonical_published_work_id",
+                "copyright",
+                "foundational_reading",
+                "language",
+                "max_age",
+                "measurements",
+                "min_age",
+                "page_count",
+                "published_works",
+                "series_name",
+                "summary",
+                "title",
+                "title_search",
+                "work_id"
+            ],
+            "title": "Result"
+        },
+        "FoundationalReading": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "token_count": {
+                    "type": "integer"
+                },
+                "word_count": {
+                    "type": "integer"
+                },
+                "unique_word_count": {
+                    "type": "integer"
+                },
+                "sight_words": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "contractions": {
+                    "type": "array",
+                    "items": {}
+                },
+                "oov": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "uncategorized": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "single_syllable": {
+                    "$ref": "#/definitions/SingleSyllable"
+                },
+                "multi_syllable": {
+                    "$ref": "#/definitions/MultiSyllable"
+                },
+                "vowel_labels": {
+                    "$ref": "#/definitions/VowelLabels"
+                }
+            },
+            "required": [
+                "contractions",
+                "multi_syllable",
+                "oov",
+                "sight_words",
+                "single_syllable",
+                "token_count",
+                "uncategorized",
+                "unique_word_count",
+                "vowel_labels",
+                "word_count"
+            ],
+            "title": "FoundationalReading"
+        },
+        "MultiSyllable": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "count": {
+                    "type": "integer"
+                },
+                "words": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "proportion": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "count",
+                "proportion",
+                "words"
+            ],
+            "title": "MultiSyllable"
+        },
+        "SingleSyllable": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "count": {
+                    "type": "integer"
+                },
+                "proportion": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "count",
+                "proportion"
+            ],
+            "title": "SingleSyllable"
+        },
+        "VowelLabels": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "long": {
+                    "$ref": "#/definitions/Long"
+                },
+                "short": {
+                    "$ref": "#/definitions/Short"
+                },
+                "meta": {
+                    "$ref": "#/definitions/Meta"
+                }
+            },
+            "required": [
+                "long",
+                "meta",
+                "short"
+            ],
+            "title": "VowelLabels"
+        },
+        "Long": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "a": {
+                    "$ref": "#/definitions/LongA"
+                },
+                "e": {
+                    "$ref": "#/definitions/LongA"
+                },
+                "i": {
+                    "$ref": "#/definitions/LongA"
+                },
+                "o": {
+                    "$ref": "#/definitions/LongA"
+                },
+                "u": {
+                    "$ref": "#/definitions/LongA"
+                }
+            },
+            "required": [
+                "a",
+                "e",
+                "i",
+                "o",
+                "u"
+            ],
+            "title": "Long"
+        },
+        "LongA": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "vcv": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "ccvce": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "vowel_teams": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "vowel_sound_count": {
+                    "type": "integer"
+                },
+                "vowel_sound_proportion": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "ccvce",
+                "vcv",
+                "vowel_sound_count",
+                "vowel_sound_proportion",
+                "vowel_teams"
+            ],
+            "title": "LongA"
+        },
+        "Meta": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "long_vowel_count": {
+                    "type": "integer"
+                },
+                "long_vowel_proportion": {
+                    "type": "number"
+                },
+                "short_vowel_count": {
+                    "type": "integer"
+                },
+                "short_vowel_proportion": {
+                    "type": "number"
+                },
+                "top_two_vowel_sounds": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/TopTwoVowelSound"
+                    }
+                }
+            },
+            "required": [
+                "long_vowel_count",
+                "long_vowel_proportion",
+                "short_vowel_count",
+                "short_vowel_proportion",
+                "top_two_vowel_sounds"
+            ],
+            "title": "Meta"
+        },
+        "Short": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "a": {
+                    "$ref": "#/definitions/ShortA"
+                },
+                "e": {
+                    "$ref": "#/definitions/ShortA"
+                },
+                "i": {
+                    "$ref": "#/definitions/ShortA"
+                },
+                "o": {
+                    "$ref": "#/definitions/ShortA"
+                },
+                "u": {
+                    "$ref": "#/definitions/ShortA"
+                }
+            },
+            "required": [
+                "a",
+                "e",
+                "i",
+                "o",
+                "u"
+            ],
+            "title": "Short"
+        },
+        "ShortA": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "cvc": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "ccvcc": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "cccvccc": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "r_control": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "vowel_sound_count": {
+                    "type": "integer"
+                },
+                "vowel_sound_proportion": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "cccvccc",
+                "ccvcc",
+                "cvc",
+                "r_control",
+                "vowel_sound_count",
+                "vowel_sound_proportion"
+            ],
+            "title": "ShortA"
+        },
+        "Measurements": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "english": {
+                    "$ref": "#/definitions/English"
+                }
+            },
+            "required": [
+                "english"
+            ],
+            "title": "Measurements"
+        },
+        "English": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "lexile": {
+                    "type": "integer"
+                },
+                "lexile_code": {
+                    "type": "string"
+                },
+                "measurable": {
+                    "type": "boolean"
+                },
+                "msl": {
+                    "type": "null"
+                },
+                "mlf": {
+                    "type": "null"
+                }
+            },
+            "required": [
+                "lexile",
+                "lexile_code",
+                "measurable",
+                "mlf",
+                "msl"
+            ],
+            "title": "English"
+        },
+        "PublishedWork": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "published_work_id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "isbn": {
+                    "type": "string"
+                },
+                "binding": {
+                    "$ref": "#/definitions/Binding"
+                },
+                "copyright": {
+                    "type": "integer"
+                },
+                "page_count": {
+                    "type": "integer"
+                },
+                "cover_art_url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".jpeg"
+                    ]
+                },
+                "english_language_learner": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "binding",
+                "copyright",
+                "cover_art_url",
+                "english_language_learner",
+                "isbn",
+                "page_count",
+                "published_work_id"
+            ],
+            "title": "PublishedWork"
+        },
+        "AuthorFirstName": {
+            "type": "string",
+            "enum": [
+                "Daffodil Hill",
+                "Amy Ingalls, Pryor Rayburn, and Jennie"
+            ],
+            "title": "AuthorFirstName"
+        },
+        "AuthorLastName": {
+            "type": "string",
+            "enum": [
+                "Press",
+                "Roberts"
+            ],
+            "title": "AuthorLastName"
+        },
+        "Author": {
+            "type": "string",
+            "enum": [
+                "Daffodil Hill Press",
+                "Amy Ingalls, Pryor Rayburn, and Jennie Roberts"
+            ],
+            "title": "Author"
+        },
+        "TopTwoVowelSound": {
+            "type": "string",
+            "enum": [
+                "long_a",
+                "short_i",
+                "short_a",
+                "short_o",
+                "long_i",
+                "short_e",
+                "short_u"
+            ],
+            "title": "TopTwoVowelSound"
+        },
+        "Language": {
+            "type": "string",
+            "enum": [
+                "english"
+            ],
+            "title": "Language"
+        },
+        "Binding": {
+            "type": "string",
+            "enum": [
+                "Trade Paper"
+            ],
+            "title": "Binding"
+        },
+        "SeriesName": {
+            "type": "string",
+            "enum": [
+                "Collection 2",
+                "Collection 1",
+                "Digraphs",
+                "Short Vowels"
+            ],
+            "title": "SeriesName"
+        }
+    }
+}
