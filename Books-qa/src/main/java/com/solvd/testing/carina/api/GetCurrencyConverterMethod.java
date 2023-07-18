@@ -13,7 +13,7 @@ import com.zebrunner.carina.utils.config.Configuration;
 @SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
 public class GetCurrencyConverterMethod extends AbstractApiMethodV2{
 	public GetCurrencyConverterMethod() {
-		replaceUrlPlaceholder("base_url", Configuration.getRequired("currency_api_url"));
+		replaceUrlPlaceholder("base_url", Configuration.getRequired("currencyexchange_api_url"));
 	}
 }
 
