@@ -21,11 +21,12 @@
 		<carina-appcenter.version>1.1.4</carina-appcenter.version>
 		<java.version>11</java.version>
 		<zebrunner-agent.version>1.9.6</zebrunner-agent.version>
-
+		<suite>helloWorld</suite>
 	</properties>
 
 	<repositories>
-		<!-- Uncomment only for testing any SNAPSHOT version of carina or zebrunner agent! -->
+		<!-- Uncomment only for testing any SNAPSHOT version of carina or
+		zebrunner agent! -->
 		<!--repository>
 			<id>zebrunner_snapshots</id>
 			<name>zebrunner Snapshots</name>
@@ -149,9 +150,14 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.1.0</version>
 				<configuration>
-					<argLine>-javaagent:${project.build.directory}/agent/zebrunner-agent.jar</argLine>
+					<argLine>
+						-javaagent:${project.build.directory}/agent/zebrunner-agent.jar</argLine>
 					<useSystemClassLoader>false</useSystemClassLoader>
-					
+					<suiteXmlFiles>
+						<suiteXmlFile>
+							${project.build.directory}/test-classes/testng_suites/${suite}.xml</suiteXmlFile>
+					</suiteXmlFiles>
+
 				</configuration>
 			</plugin>
 		</plugins>
