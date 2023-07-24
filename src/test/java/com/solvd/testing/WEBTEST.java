@@ -35,6 +35,7 @@ public class WEBTEST implements IAbstractTest {
 
 		MarketplacePage marketplacePage = new MarketplacePage(getDriver());
 		marketplacePage.open();
+		Assert.assertTrue(homePage.isPageOpened(), "Home page was not opened");
 
 	}
 
