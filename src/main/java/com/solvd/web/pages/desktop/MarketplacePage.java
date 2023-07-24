@@ -6,6 +6,7 @@ import com.zebrunner.carina.webdriver.gui.AbstractPage;
 
 public class MarketplacePage extends AbstractPage {
 
+	
 	public MarketplacePage(WebDriver driver) {
         super(driver);
     }

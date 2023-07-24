@@ -8,7 +8,7 @@ import com.zebrunner.carina.webdriver.gui.AbstractPage;
 
 public class MainPage extends AbstractPage {
 
-    @FindBy(xpath = "//div[@aria-label='Account']")
+    @FindBy(xpath = "//*[name()='g' and contains(@mask,'url(#:R3ab')]//*[name()='image' and contains(@x,'0')]")
     private ExtendedWebElement userNavigationButton;
 
     @FindBy(xpath = "//span[text()='Log Out']")

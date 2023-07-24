@@ -1,19 +1,15 @@
 package com.solvd.web.pages.common;
 
 import java.util.List;
-
 import org.openqa.selenium.WebDriver;
-
 import com.zebrunner.carina.webdriver.gui.AbstractPage;
-
 
 public abstract class newsBasePage extends AbstractPage {
 
-    public newsBasePage(WebDriver driver) {
-        super(driver);
-    }
+	public newsBasePage(WebDriver driver) {
+		super(driver);
+	}
 
-    public abstract List<NewsItem> searchNews(String searchInput);
-    public abstract void openSearchedNews(String searchedTerm);
+	public abstract List<NewsItem> searchNews(String searchInput);
 
 }

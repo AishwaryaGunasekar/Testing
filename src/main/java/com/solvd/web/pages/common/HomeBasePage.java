@@ -12,6 +12,9 @@ public abstract class HomeBasePage extends AbstractPage {
 	}
 
 	public abstract void createPost(String message);
+
 	public abstract newsBasePage openNewsPage();
+
+	public abstract FeedBasePage openFeedPage();
 
 }
