@@ -8,8 +8,8 @@ public abstract class PasswordPageBase extends AbstractPage {
 	public PasswordPageBase(WebDriver driver) {
 		super(driver);
 	}
-	
-	public abstract void typePassword(String name);
-	 public abstract AmazonHomPageBase isContinueBtnActive();
-}
 
+	public abstract void typePassword(String name);
+
+	public abstract AmazonHomePageBase isContinueBtnActive();
+}

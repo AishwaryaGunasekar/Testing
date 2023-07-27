@@ -4,11 +4,11 @@ import org.openqa.selenium.WebDriver;
 
 import com.zebrunner.carina.webdriver.gui.AbstractPage;
 
-public abstract class AccountPageBase extends AbstractPage {
+public abstract class ListsPageBase extends AbstractPage {
 
-	public AccountPageBase(WebDriver driver) {
+	public ListsPageBase(WebDriver driver) {
 		super(driver);
 	}
-
-	public abstract ProfilePageBase profile();
+	
+	public abstract AmazonHomePageBase home();
 }
