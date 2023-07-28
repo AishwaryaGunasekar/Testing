@@ -2,8 +2,6 @@ package com.solvd.mobile.android.desktop;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
-
-import com.solvd.mobile.android.common.AmazonHomePageBase;
 import com.solvd.mobile.android.common.OrdersPageBase;
 import com.solvd.mobile.android.common.ProfilePageBase;
 import com.zebrunner.carina.utils.factory.DeviceType;

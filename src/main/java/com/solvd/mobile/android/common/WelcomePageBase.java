@@ -4,9 +4,9 @@ import org.openqa.selenium.WebDriver;
 import com.zebrunner.carina.webdriver.gui.AbstractPage;
 
 public abstract class WelcomePageBase extends AbstractPage {
-	  public WelcomePageBase(WebDriver driver) {
-	        super(driver);
-	    }
+	public WelcomePageBase(WebDriver driver) {
+		super(driver);
+	}
 
-	    public abstract SigninPageBase click();
+	public abstract SigninPageBase click();
 }

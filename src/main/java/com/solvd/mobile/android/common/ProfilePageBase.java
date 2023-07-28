@@ -10,8 +10,7 @@ public abstract class ProfilePageBase extends AbstractPage {
 	}
 
 	public abstract AccountPageBase yourAccount();
+
 	public abstract OrdersPageBase yourOrders();
-	// public abstract BuyAgainPageBase buyAgain();
-	// public abstract ListsPageBase yourList();
 
 }

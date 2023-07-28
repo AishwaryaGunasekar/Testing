@@ -2,8 +2,6 @@ package com.solvd.mobile.android.desktop;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
-
-import com.solvd.mobile.android.common.AmazonHomePageBase;
 import com.solvd.mobile.android.common.PasswordPageBase;
 import com.solvd.mobile.android.common.SigninPageBase;
 import com.zebrunner.carina.utils.factory.DeviceType.Type;
@@ -16,8 +14,6 @@ public class SigninPage extends SigninPageBase {
 	@FindBy(className = "android.widget.EditText")
 	private ExtendedWebElement email;
 
-	// @FindBy(className="android.widget.Button")
-	// @FindBy(id = "com.amazon.mShop.android.shopping:id/continue")
 	@FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[2]/android.widget.Button")
 	private ExtendedWebElement cont;
 

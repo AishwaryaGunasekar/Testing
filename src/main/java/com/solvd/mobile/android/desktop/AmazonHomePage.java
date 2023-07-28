@@ -2,13 +2,10 @@ package com.solvd.mobile.android.desktop;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
-
 import com.solvd.mobile.android.common.AmazonHomePageBase;
 import com.solvd.mobile.android.common.CartPageBase;
-import com.solvd.mobile.android.common.ProductsPageBase;
 import com.solvd.mobile.android.common.ProfilePageBase;
 import com.solvd.mobile.android.common.SettingsPageBase;
-import com.solvd.web.pages.common.HomeBasePage;
 import com.zebrunner.carina.utils.R;
 import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.utils.factory.DeviceType.Type;
@@ -51,15 +48,6 @@ public class AmazonHomePage extends AmazonHomePageBase {
 	public CartPageBase cart() {
 		viewcart.click();
 		return initPage(getDriver(), CartPageBase.class);
-	}
-
-	@Override
-	public ProductsPageBase searchproduct(String term) {
-
-		searchProducts.type(R.TESTDATA.get("products"));
-		searchProducts.click();
-
-		return initPage(getDriver(), ProductsPageBase.class);
 	}
 
 	@Override
