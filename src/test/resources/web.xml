@@ -3,7 +3,7 @@
 
     <test name="Web tests">
         <classes>
-            <class name="com.solvd.testing.WEBTEST" />
+            <class name="com.solvd.testing.WebTesting" />
         </classes>
     </test>
 

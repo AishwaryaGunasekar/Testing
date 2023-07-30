@@ -1,7 +1,6 @@
 package com.solvd.testing;
 
-import com.solvd.testing.carina.api.*;
-
+import com.solvd.testing.api.*;
 import com.zebrunner.carina.api.http.HttpResponseStatusType;
 import com.zebrunner.carina.core.IAbstractTest;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
