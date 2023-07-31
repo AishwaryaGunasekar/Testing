@@ -2,6 +2,7 @@ package com.solvd.mobile.android.desktop;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
+
 import com.solvd.mobile.android.common.ListsPageBase;
 import com.solvd.mobile.android.common.SettingsPageBase;
 import com.zebrunner.carina.utils.factory.DeviceType;
@@ -31,4 +32,5 @@ public class SettingsPage extends SettingsPageBase {
 		listsshortcut.click();
 		return initPage(getDriver(), ListsPageBase.class);
 	}
+
 }

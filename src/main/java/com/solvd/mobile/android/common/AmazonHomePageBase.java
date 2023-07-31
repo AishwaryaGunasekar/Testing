@@ -14,5 +14,9 @@ public abstract class AmazonHomePageBase extends AbstractPage {
 	public abstract CartPageBase cart();
 
 	public abstract SettingsPageBase click();
+	
+	public abstract AmazonPharmacyPageBase pharmacy();
+	
+	
 
 }

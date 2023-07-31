@@ -3,6 +3,7 @@ package com.solvd.mobile.android.desktop;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import com.solvd.mobile.android.common.AmazonHomePageBase;
+import com.solvd.mobile.android.common.AmazonPharmacyPageBase;
 import com.solvd.mobile.android.common.CartPageBase;
 import com.solvd.mobile.android.common.ProfilePageBase;
 import com.solvd.mobile.android.common.SettingsPageBase;
@@ -29,6 +30,8 @@ public class AmazonHomePage extends AmazonHomePageBase {
 	@FindBy(xpath = "//android.widget.ImageView[@content-desc=\"Browse menu Tab 4 of 4\"]")
 	private ExtendedWebElement settingsicon;
 
+	@FindBy(id ="com.amazon.mShop.android.shopping:id/subnav_button_text")
+	private ExtendedWebElement pharmacy;
 	public AmazonHomePage(WebDriver driver) {
 		super(driver);
 	}
@@ -54,6 +57,12 @@ public class AmazonHomePage extends AmazonHomePageBase {
 	public SettingsPageBase click() {
 		settingsicon.click();
 		return initPage(getDriver(), SettingsPageBase.class);
+	}
+
+	@Override
+	public AmazonPharmacyPageBase pharmacy() {
+		pharmacy.click();
+		return initPage(getDriver(), AmazonPharmacyPageBase.class);
 	}
 
 }

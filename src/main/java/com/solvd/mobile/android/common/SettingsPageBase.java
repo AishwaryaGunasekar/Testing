@@ -11,4 +11,6 @@ public abstract class SettingsPageBase extends AbstractPage {
 
 	public abstract ListsPageBase viewlist();
 
+	
+
 }

@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 import org.testng.Assert;
 import com.solvd.mobile.android.common.AccountPageBase;
 import com.solvd.mobile.android.common.AmazonHomePageBase;
+import com.solvd.mobile.android.common.AmazonPharmacyPageBase;
 import com.solvd.mobile.android.common.CartPageBase;
 import com.solvd.mobile.android.common.ListsPageBase;
 import com.solvd.mobile.android.common.OrdersPageBase;
@@ -29,6 +30,7 @@ public class MobileTesting implements IAbstractTest, IMobileUtils {
 		SigninPageBase signin = welcomePage.click();
 		Assert.assertTrue(signin.isPageOpened(), "Signin  is active when it should be disabled");
 		signin.typeEmail(email);
+		signin.pause(10);
 		PasswordPageBase password = signin.click();
 		Assert.assertTrue(password.isPageOpened(), "Password page  is active when it should be disabled");
 		password.typePassword(pass);
@@ -53,6 +55,7 @@ public class MobileTesting implements IAbstractTest, IMobileUtils {
 		password.typePassword(pass);
 		AmazonHomePageBase ama = password.isContinueBtnActive();
 		Assert.assertTrue(ama.isPageOpened(), "Amazon page isn't opened");
+
 		ProfilePageBase profilebase = ama.profile();
 		Assert.assertTrue(profilebase.isPageOpened(), "Profile page isn't opened");
 
@@ -74,6 +77,7 @@ public class MobileTesting implements IAbstractTest, IMobileUtils {
 		password.typePassword(pass);
 		AmazonHomePageBase ama = password.isContinueBtnActive();
 		Assert.assertTrue(ama.isPageOpened(), "Amazon page isn't opened");
+
 		ProfilePageBase profilebase = ama.profile();
 		Assert.assertTrue(profilebase.isPageOpened(), "Welcome page isn't opened");
 		OrdersPageBase orderspage = profilebase.yourOrders();
@@ -99,6 +103,7 @@ public class MobileTesting implements IAbstractTest, IMobileUtils {
 		password.typePassword(pass);
 		AmazonHomePageBase ama = password.isContinueBtnActive();
 		Assert.assertTrue(ama.isPageOpened(), "Amazon page isn't opened");
+
 		ProfilePageBase profilebase = ama.profile();
 		Assert.assertTrue(profilebase.isPageOpened(), "Profile page isn't opened");
 		AccountPageBase accountbase = profilebase.yourAccount();
@@ -122,6 +127,7 @@ public class MobileTesting implements IAbstractTest, IMobileUtils {
 		PasswordPageBase password = signin.click();
 		Assert.assertTrue(password.isPageOpened(), "Password page  is active when it should be disabled");
 		password.typePassword(pass);
+
 		AmazonHomePageBase ama = password.isContinueBtnActive();
 		Assert.assertTrue(ama.isPageOpened(), "Amazon page isn't opened");
 		CartPageBase cartspage = ama.cart();
@@ -145,6 +151,7 @@ public class MobileTesting implements IAbstractTest, IMobileUtils {
 		PasswordPageBase password = signin.click();
 		Assert.assertTrue(password.isPageOpened(), "Password page  is active when it should be disabled");
 		password.typePassword(pass);
+
 		AmazonHomePageBase ama = password.isContinueBtnActive();
 		Assert.assertTrue(ama.isPageOpened(), "Amazon page isn't opened");
 		SettingsPageBase spb = ama.click();
@@ -152,32 +159,25 @@ public class MobileTesting implements IAbstractTest, IMobileUtils {
 		AmazonHomePageBase ahpb = lpb.home();
 		Assert.assertTrue(ahpb.isPageOpened(), "Amazon page isn't opened");
 	}
+
+	@Test()
+	public void testAmazonPharmacy() {
+		String email = "ashmano0407@gmail.com";
+		String pass = "Test123!";
+		WelcomePageBase welcomePage = initPage(getDriver(), WelcomePageBase.class);
+		Assert.assertTrue(welcomePage.isPageOpened(), "Welcome page isn't opened");
+		SigninPageBase signin = welcomePage.click();
+		Assert.assertTrue(signin.isPageOpened(), "Signin  is active when it should be disabled");
+		signin.typeEmail(email);
+		PasswordPageBase password = signin.click();
+		Assert.assertTrue(password.isPageOpened(), "Password page  is active when it should be disabled");
+		password.typePassword(pass);
+		AmazonHomePageBase ama = password.isContinueBtnActive();
+		Assert.assertTrue(ama.isPageOpened(), "Amazon page isn't opened");
+		AmazonPharmacyPageBase ap = ama.pharmacy();
+		Assert.assertTrue(ap.isPageOpened(), "Amazonpharmacy page isn't opened");
+		AmazonHomePageBase amp = ap.close();
+		Assert.assertTrue(amp.isPageOpened(), "Amazon page isn't opened");
+	}
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
