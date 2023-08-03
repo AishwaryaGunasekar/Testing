@@ -1,5 +1,6 @@
 package com.solvd.testing;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.Assert;
 import com.solvd.mobile.android.common.AccountPageBase;
@@ -19,6 +20,7 @@ import com.zebrunner.carina.utils.mobile.IMobileUtils;
 
 public class MobileTesting implements IAbstractTest, IMobileUtils {
 
+	@BeforeMethod()
 	@Test(testName = "Test Signin", description = "Check whether we are able to sign into our amazon account")
 	@MethodOwner(owner = "AG")
 	public void testSignin() {
@@ -43,20 +45,8 @@ public class MobileTesting implements IAbstractTest, IMobileUtils {
 	@MethodOwner(owner = "AG")
 	public void testProfile() {
 
-		String email = "ashmano0407@gmail.com";
-		String pass = "Test123!";
-		WelcomePageBase welcomePage = initPage(getDriver(), WelcomePageBase.class);
-		Assert.assertTrue(welcomePage.isPageOpened(), "Welcome page isn't opened");
-		SigninPageBase signin = welcomePage.click();
-		Assert.assertTrue(signin.isPageOpened(), "Signin  is active when it should be disabled");
-		signin.typeEmail(email);
-		PasswordPageBase password = signin.click();
-		Assert.assertTrue(password.isPageOpened(), "Password page  is active when it should be disabled");
-		password.typePassword(pass);
-		AmazonHomePageBase ama = password.isContinueBtnActive();
-		Assert.assertTrue(ama.isPageOpened(), "Amazon page isn't opened");
-
-		ProfilePageBase profilebase = ama.profile();
+		AmazonHomePageBase a = initPage(getDriver(), AmazonHomePageBase.class);
+		ProfilePageBase profilebase = a.profile();
 		Assert.assertTrue(profilebase.isPageOpened(), "Profile page isn't opened");
 
 	}
@@ -65,19 +55,7 @@ public class MobileTesting implements IAbstractTest, IMobileUtils {
 	@MethodOwner(owner = "AG")
 	public void testOrder() {
 
-		String email = "ashmano0407@gmail.com";
-		String pass = "Test123!";
-		WelcomePageBase welcomePage = initPage(getDriver(), WelcomePageBase.class);
-		Assert.assertTrue(welcomePage.isPageOpened(), "Welcome page isn't opened");
-		SigninPageBase signin = welcomePage.click();
-		Assert.assertTrue(signin.isPageOpened(), "Signin  is active when it should be disabled");
-		signin.typeEmail(email);
-		PasswordPageBase password = signin.click();
-		Assert.assertTrue(password.isPageOpened(), "Password page  is active when it should be disabled");
-		password.typePassword(pass);
-		AmazonHomePageBase ama = password.isContinueBtnActive();
-		Assert.assertTrue(ama.isPageOpened(), "Amazon page isn't opened");
-
+		AmazonHomePageBase ama = initPage(getDriver(), AmazonHomePageBase.class);
 		ProfilePageBase profilebase = ama.profile();
 		Assert.assertTrue(profilebase.isPageOpened(), "Welcome page isn't opened");
 		OrdersPageBase orderspage = profilebase.yourOrders();
@@ -91,19 +69,7 @@ public class MobileTesting implements IAbstractTest, IMobileUtils {
 	@MethodOwner(owner = "AG")
 	public void testAccount() {
 
-		String email = "ashmano0407@gmail.com";
-		String pass = "Test123!";
-		WelcomePageBase welcomePage = initPage(getDriver(), WelcomePageBase.class);
-		Assert.assertTrue(welcomePage.isPageOpened(), "Welcome page isn't opened");
-		SigninPageBase signin = welcomePage.click();
-		Assert.assertTrue(signin.isPageOpened(), "Signin  is active when it should be disabled");
-		signin.typeEmail(email);
-		PasswordPageBase password = signin.click();
-		Assert.assertTrue(password.isPageOpened(), "Password page  is active when it should be disabled");
-		password.typePassword(pass);
-		AmazonHomePageBase ama = password.isContinueBtnActive();
-		Assert.assertTrue(ama.isPageOpened(), "Amazon page isn't opened");
-
+		AmazonHomePageBase ama = initPage(getDriver(), AmazonHomePageBase.class);
 		ProfilePageBase profilebase = ama.profile();
 		Assert.assertTrue(profilebase.isPageOpened(), "Profile page isn't opened");
 		AccountPageBase accountbase = profilebase.yourAccount();
@@ -117,19 +83,7 @@ public class MobileTesting implements IAbstractTest, IMobileUtils {
 	@MethodOwner(owner = "AG")
 	public void testCart() {
 
-		String email = "ashmano0407@gmail.com";
-		String pass = "Test123!";
-		WelcomePageBase welcomePage = initPage(getDriver(), WelcomePageBase.class);
-		Assert.assertTrue(welcomePage.isPageOpened(), "Welcome page isn't opened");
-		SigninPageBase signin = welcomePage.click();
-		Assert.assertTrue(signin.isPageOpened(), "Signin  is active when it should be disabled");
-		signin.typeEmail(email);
-		PasswordPageBase password = signin.click();
-		Assert.assertTrue(password.isPageOpened(), "Password page  is active when it should be disabled");
-		password.typePassword(pass);
-
-		AmazonHomePageBase ama = password.isContinueBtnActive();
-		Assert.assertTrue(ama.isPageOpened(), "Amazon page isn't opened");
+		AmazonHomePageBase ama = initPage(getDriver(), AmazonHomePageBase.class);
 		CartPageBase cartspage = ama.cart();
 		Assert.assertTrue(cartspage.isPageOpened(), "Cart page  is active when it should be disabled");
 		AmazonHomePageBase ahp = cartspage.home();
@@ -141,19 +95,7 @@ public class MobileTesting implements IAbstractTest, IMobileUtils {
 	@MethodOwner(owner = "AG")
 	public void testCreatedLists() {
 
-		String email = "ashmano0407@gmail.com";
-		String pass = "Test123!";
-		WelcomePageBase welcomePage = initPage(getDriver(), WelcomePageBase.class);
-		Assert.assertTrue(welcomePage.isPageOpened(), "Welcome page isn't opened");
-		SigninPageBase signin = welcomePage.click();
-		Assert.assertTrue(signin.isPageOpened(), "Signin  is active when it should be disabled");
-		signin.typeEmail(email);
-		PasswordPageBase password = signin.click();
-		Assert.assertTrue(password.isPageOpened(), "Password page  is active when it should be disabled");
-		password.typePassword(pass);
-
-		AmazonHomePageBase ama = password.isContinueBtnActive();
-		Assert.assertTrue(ama.isPageOpened(), "Amazon page isn't opened");
+		AmazonHomePageBase ama = initPage(getDriver(), AmazonHomePageBase.class);
 		SettingsPageBase spb = ama.click();
 		ListsPageBase lpb = spb.viewlist();
 		AmazonHomePageBase ahpb = lpb.home();
@@ -162,18 +104,8 @@ public class MobileTesting implements IAbstractTest, IMobileUtils {
 
 	@Test()
 	public void testAmazonPharmacy() {
-		String email = "ashmano0407@gmail.com";
-		String pass = "Test123!";
-		WelcomePageBase welcomePage = initPage(getDriver(), WelcomePageBase.class);
-		Assert.assertTrue(welcomePage.isPageOpened(), "Welcome page isn't opened");
-		SigninPageBase signin = welcomePage.click();
-		Assert.assertTrue(signin.isPageOpened(), "Signin  is active when it should be disabled");
-		signin.typeEmail(email);
-		PasswordPageBase password = signin.click();
-		Assert.assertTrue(password.isPageOpened(), "Password page  is active when it should be disabled");
-		password.typePassword(pass);
-		AmazonHomePageBase ama = password.isContinueBtnActive();
-		Assert.assertTrue(ama.isPageOpened(), "Amazon page isn't opened");
+
+		AmazonHomePageBase ama = initPage(getDriver(), AmazonHomePageBase.class);
 		AmazonPharmacyPageBase ap = ama.pharmacy();
 		Assert.assertTrue(ap.isPageOpened(), "Amazonpharmacy page isn't opened");
 		AmazonHomePageBase amp = ap.close();

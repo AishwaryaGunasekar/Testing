@@ -38,6 +38,7 @@ public class WebTesting implements IAbstractTest {
 	}
 
 	@Test(testName = "View Cart", description = "View your cart from  amazon")
+	@MethodOwner(owner = "AG")
 	public void viewCart() {
 
 		WelcomePageBase welcomepage = initPage(getDriver(), WelcomePageBase.class);
@@ -50,6 +51,7 @@ public class WebTesting implements IAbstractTest {
 	}
 
 	@Test(testName = "AmazonBasics ", description = "Amazon basics deals")
+	@MethodOwner(owner = "AG")
 	public void viewAmazonBasicsDeals() {
 
 		WelcomePageBase welcomepage = initPage(getDriver(), WelcomePageBase.class);
@@ -61,6 +63,7 @@ public class WebTesting implements IAbstractTest {
 	}
 
 	@Test(testName = "Amazon Books", description = "view amazon books")
+	@MethodOwner(owner = "AG")
 	public void viewAmazonBooks() {
 		WelcomePageBase welcomepage = initPage(getDriver(), WelcomePageBase.class);
 		welcomepage.open();
@@ -71,6 +74,7 @@ public class WebTesting implements IAbstractTest {
 	}
 
 	@Test(testName = "Account details", description = "View your account details in amazon")
+	@MethodOwner(owner = "AG")
 	public void viewAccountDetails() {
 
 		WelcomePageBase welcomepage = initPage(getDriver(), WelcomePageBase.class);
