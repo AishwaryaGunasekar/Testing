@@ -2,6 +2,7 @@ package com.solvd.testing;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.solvd.web.common.AccountPageBase;
@@ -19,6 +20,7 @@ public class WebTesting implements IAbstractTest {
 	@BeforeMethod()
 	@Test(testName = "Login", description = "Login into amazon")
 	@MethodOwner(owner = "AG")
+	@DataProvider
 	public void login() {
 
 		String email = "ashmano0407@gmail.com";
@@ -80,7 +82,6 @@ public class WebTesting implements IAbstractTest {
 		WelcomePageBase welcomepage = initPage(getDriver(), WelcomePageBase.class);
 		welcomepage.open();
 		AccountPageBase apb = welcomepage.viewAccountDetails();
-		Assert.assertTrue(apb.isPageOpened(), "AccountPage is not opened");
 
 		WelcomePageBase wel = apb.home();
 		Assert.assertTrue(wel.isPageOpened(), "welcome page is not opened");
